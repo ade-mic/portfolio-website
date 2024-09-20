@@ -1,0 +1,268 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2e6da;
+  line-height: 1.6;
+}
+
+h1 h2 h3 {
+  font-family: 'Bogart', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 4em;
+  background-color: #674636;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000;
+  border-radius: 5px;
+  overflow: auto;
+}
+
+.logo {
+  background-image: url("./images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 100%;
+  margin: 0;
+}
+
+ul.topnav {
+  list-style: none;
+  display: flex;
+}
+
+ul.topnav li {
+  margin: 0 10px;
+}
+
+ul.topnav li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+ul.topnav li a:hover, ul.topnav li a.active {
+  background-color: #AAB396;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  padding: 20px 10px;
+  margin-top: 3.5em; /* To avoid overlap with the navbar */
+}
+
+.home {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.home-content {
+  max-width: 500px;
+}
+
+.home-content h1 {
+  margin-top: 0;
+  font-size: 4em;
+}
+
+.home-content p {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.home-image {
+  width: 350px;
+  height: 350px;
+}
+
+hr {
+  width: 20%;
+  height: 2px;
+  text-align: left;
+  background-color: black;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: black;
+  border: 2px solid #674636;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #555;
+  color: white;
+}
+
+.home-image img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+}
+
+/* Bio Section */
+
+/* Educational Background Section */
+.education {
+  text-align: center;
+}
+
+.education h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.education ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.education li {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.education li strong {
+  display: block;
+  font-size: 1.4em;
+  margin-bottom: 5px;
+}
+/* Portfolio Section */
+.portfolio {
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.project {
+  margin-bottom: 40px;
+}
+
+.project h3 {
+  font-size: 1.8em;
+}
+
+.project img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project p {
+  font-size: 1.2em;
+}
+
+/* Contact Section */
+.contact {
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5em;
+}
+
+.contact p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+/* Show More Button */
+.show-more-btn {
+  background: none;
+  border-bottom: #674636 2px thick;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  outline: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+.show-more-btn:hover {
+  background-color: #67463681;
+}
+.more-info {
+  display: none;
+  color: #333;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home {
+    margin-top: 5em;
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-content h1 {
+    font-size: 3em;
+  }
+
+  .home-image img {
+    margin-top: 20px;
+  }
+  #wave-divider {
+    margin-top: 200px
+  }
+}
+
+@media (max-width: 480px) {
+  #home{
+    margin-top: 10em;
+  }
+  .home {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .home-content h1 {
+    font-size: 2.5em;
+  }
+  .job-title {
+    margin: 0;
+  }
+
+  .navbar {
+    width: 100%;
+    height: 10em;
+    background-color: #674636;
+  }
+
+  ul.topnav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  ul.topnav li {
+    margin: 5px 0;
+  }
+  #wave-divider {
+    margin-top: 200px
+  }
+}

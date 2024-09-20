@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ademola Aina - Portfolio</title>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <link href="https://fonts.cdnfonts.com/css/bogart" rel="stylesheet">
+  <title>Ademola Aina</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="navbar">
+      <a href="#home" class="logo">
+    </a>
+      <nav>    
+        <ul class="topnav">
+          <li><a href="#education">Education</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home">
+    <div class="home-content">
+      <h1>Ademola Aina</h1>
+      <p class="job-title">Software Engineer</p>
+      <hr>
+      <a href="#portfolio" class="btn">View My Work</a>
+    </div>
+    <div class="home-image">
+    <img src="images/ADE-PW.jpg" alt="Personal picture">
+    <p>I am a passionate software engineer with a strong foundation in programming, data analysis, and front-end development...</p>
+    </div>
+  </section>
+      <!-- Wave Divider -->
+      <div class="wave-divider" id="wave-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path fill="#674636" fill-opacity="1" d="M0,160L30,154.7C60,149,120,139,180,133.3C240,128,300,128,360,154.7C420,181,480,235,540,224C600,213,660,139,720,122.7C780,107,840,149,900,176C960,203,1020,213,1080,197.3C1140,181,1200,139,1260,128C1320,117,1380,139,1410,149.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+        </svg>
+      </div>
+    
+
+    <!-- Educational Background Section -->
+    <section id="education" class="education">
+      <h2>Educational Background</h2>
+      <ul>
+        <li><strong>ALX SE Program (2023 - Present)</strong><br>
+            Software Engineering: C programming, Python, Data Structures, Web Stack (HTML, CSS, JavaScript).</li>
+        <li><strong>MSc, Universiti Putra Malaysia (2024)</strong><br>
+            Agricultural Process Engineering, Computational Modeling, Finite Element Modeling, Machine Learning.</li>
+        <li><strong>BEng, Federal University of Technology, Akure (2018)</strong><br>
+            Agricultural Engineering.</li>
+      </ul>
+    </section>
+  <!-- Wave Divider -->
+  <div class="wave-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#674636" fill-opacity="1" d="M0,160L30,154.7C60,149,120,139,180,133.3C240,128,300,128,360,154.7C420,181,480,235,540,224C600,213,660,139,720,122.7C780,107,840,149,900,176C960,203,1020,213,1080,197.3C1140,181,1200,139,1260,128C1320,117,1380,139,1410,149.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+    </svg>
+  </div>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>Portfolio</h2>
+    <div class="project">
+      <h3>Product Description Page</h3>
+      <a target="_blank" href="https://t7cf8l.csb.app/"> <img src="./images/product_page.png" alt="">
+      </a>
+      <p class="caption">This project showcases a product card with a clean and responsive
+        design built using React
+        <span class="more-info" id="more-info-1" style="display: none;">
+          It features an interactive color selection
+          tool, dynamic image gallery with thumbnails, detailed product
+          information, and a user-friendly "show more" description feature.
+          The page includes custom-styled buttons and a responsive layout,
+          offering a visually appealing and intuitive shopping experience.
+        </span>
+        <button class="show-more-btn" onclick="toggleMoreInfo('more-info-1')">show more</button>
+      </p>
+    </div>
+    <div class="project">
+      <h3>Keeper App</h3>
+      <a target="_blank" href="https://3yk38r.csb.app/"> <img src="./images/Screenshot (6).png" alt="Keeper App">
+      </a>
+      <p>Keeper is a modern digital note-taking application inspired by
+        Google Keep.
+        <span class="more-info" id="more-info-2" style="display: none;">
+          Built using React and enhanced with Material-UI
+          icons, Keeper offers a clean and user-friendly interface for
+          organizing your thoughts, tasks, and ideas.         
+        </span>
+        <button class="show-more-btn" onclick="toggleMoreInfo('more-info-2')">show more</button>
+      </p>
+    </div>
+  </section>
+
+    <!-- Wave Divider -->
+    <div class="wave-divider">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#674636" fill-opacity="1" d="M0,160L30,154.7C60,149,120,139,180,133.3C240,128,300,128,360,154.7C420,181,480,235,540,224C600,213,660,139,720,122.7C780,107,840,149,900,176C960,203,1020,213,1080,197.3C1140,181,1200,139,1260,128C1320,117,1380,139,1410,149.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
+      </svg>
+    </div>
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: ademola.aina@outlook.com</p>
+    <p>Phone: (234) 8103 282342</p>
+  </section>
+
+  <script>
+    function toggleMoreInfo(id) {
+      const moreInfo = document.getElementById(id);
+      const btn = moreInfo.nextElementSibling;
+      
+      if (moreInfo.style.display === "none") {
+        moreInfo.style.display = "inline";
+        btn.innerHTML = "show less";
+      } else {
+        moreInfo.style.display = "none";
+        btn.innerHTML = "show more";
+      }
+    }
+  </script>
+</body>
+</html>
