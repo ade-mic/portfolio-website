@@ -154,6 +154,11 @@ hr {
   margin-bottom: 40px;
 }
 
+.portfolio a {
+  text-decoration: none;
+  color: black;
+}
+
 .project {
   margin-bottom: 40px;
 }
