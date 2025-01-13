@@ -1,156 +1,726 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ademola Aina - Portfolio</title>
-  <link rel="icon" href="images/logo.png" type="image/x-icon">
-  <link href="https://fonts.cdnfonts.com/css/bogart" rel="stylesheet">
-  <title>Ademola Aina</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Ademola Aina - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/A.M .Aina.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="style.css">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- Navbar -->
-  <header>
-    <div class="navbar">
-      <a href="#home" class="logo">
-    </a>
-      <nav>    
-        <ul class="topnav">
-          <li><a href="#education">Education</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <!-- Home Section -->
-  <section id="home" class="home">
-    <div class="home-content">
-      <h1>Ademola Aina</h1>
-      <p class="job-title">Software Engineer</p>
-      <hr>
-      <a href="#portfolio" class="btn">View My Work</a>
-    </div>
-    <div class="home-image">
-    <img src="images/ADE-PW.jpg" alt="Personal picture">
-    <p>I am a passionate software engineer with a strong foundation in programming, data analysis, and front-end development...</p>
-    </div>
-  </section>
-      <!-- Wave Divider -->
-      <div class="wave-divider" id="wave-divider">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#674636" fill-opacity="1" d="M0,160L30,154.7C60,149,120,139,180,133.3C240,128,300,128,360,154.7C420,181,480,235,540,224C600,213,660,139,720,122.7C780,107,840,149,900,176C960,203,1020,213,1080,197.3C1140,181,1200,139,1260,128C1320,117,1380,139,1410,149.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-        </svg>
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/personal-avatar.png" alt="A.M Aina avatar" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ademola Aina">Ademola Aina</h1>
+
+          <p class="title">Full Stack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
       </div>
-    
 
-    <!-- Educational Background Section -->
-    <section id="education" class="education">
-      <h2>Educational Background</h2>
-      <ul>
-        <li><strong>ALX SE Program (2023 - Present)</strong><br>
-            Software Engineering: C programming, Python, Data Structures, Web Stack (HTML, CSS, JavaScript).</li>
-        <li><strong>MSc, Universiti Putra Malaysia (2024)</strong><br>
-            Agricultural Process Engineering, Computational Modeling, Finite Element Modeling, Machine Learning.</li>
-        <li><strong>BEng, Federal University of Technology, Akure (2018)</strong><br>
-            Agricultural Engineering.</li>
-      </ul>
-    </section>
-  <!-- Wave Divider -->
-  <div class="wave-divider">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-      <path fill="#674636" fill-opacity="1" d="M0,160L30,154.7C60,149,120,139,180,133.3C240,128,300,128,360,154.7C420,181,480,235,540,224C600,213,660,139,720,122.7C780,107,840,149,900,176C960,203,1020,213,1080,197.3C1140,181,1200,139,1260,128C1320,117,1380,139,1410,149.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-    </svg>
-  </div>
+      <div class="sidebar-info_more">
 
-  <!-- Portfolio Section -->
-  <section id="portfolio" class="portfolio">
-    <h2>Portfolio</h2>
-    <div class="project">
-      <a target="_blank" href="https://t7cf8l.csb.app/">
-        <h3>Product Description Page</h3>
-         <img src="./images/product_page.png" alt="">
-      
-      </a>
-      <p class="caption">This project showcases a product card with a clean and responsive
-        design built using React
-        <span class="more-info" id="more-info-1" style="display: none;">
-          It features an interactive color selection
-          tool, dynamic image gallery with thumbnails, detailed product
-          information, and a user-friendly "show more" description feature.
-          The page includes custom-styled buttons and a responsive layout,
-          offering a visually appealing and intuitive shopping experience.
-        </span>
-        <button class="show-more-btn" onclick="toggleMoreInfo('more-info-1')">show more</button>
-      </p>
-    </div>
-    <div class="project">
-      <a target="_blank" href="https://3yk38r.csb.app/">
-        <h3>Keeper App</h3>
-     <img src="./images/Screenshot (6).png" alt="Keeper App">
-      </a>
-      <p>Keeper is a modern digital note-taking application inspired by
-        Google Keep.
-        <span class="more-info" id="more-info-2" style="display: none;">
-          Built using React and enhanced with Material-UI
-          icons, Keeper offers a clean and user-friendly interface for
-          organizing your thoughts, tasks, and ideas.         
-        </span>
-        <button class="show-more-btn" onclick="toggleMoreInfo('more-info-2')">show more</button>
-      </p>
-    </div>
-  </section>
+        <div class="separator"></div>
 
-    <!-- Wave Divider -->
-    <div class="wave-divider">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#674636" fill-opacity="1" d="M0,160L30,154.7C60,149,120,139,180,133.3C240,128,300,128,360,154.7C420,181,480,235,540,224C600,213,660,139,720,122.7C780,107,840,149,900,176C960,203,1020,213,1080,197.3C1140,181,1200,139,1260,128C1320,117,1380,139,1410,149.3L1440,160L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-      </svg>
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:ademola.aina@outlook.com" class="contact-link">ademola.aina@outlook.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+2348103282342" class="contact-link">+234-8103282342</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-03-11">11 March</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Ibadan, Nigeria</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/ademola-aina-m/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://x.com/ace_ade" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/ade-mic" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="about">About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="resume">Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="portfolio">Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="blog">Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link="contact">Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm FullStack Developer. I swapped my lab coats for code.
+            I enjoy
+            turning complex problems into 'simple solutions'.
+            I might go back to the lab one day, but for now, I'm happy building things that live on the internet.
+          </p>
+
+          <p>
+            I create websites, software, and scripts that are functional, user-friendly, and visually appealing.
+            I also collaborate with others to ensure every product shines and delivers the best experience possible
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  The most modern and high-quality design made at a professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box" >
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  High-quality development of sites at the professional level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box service-icon-color">
+                <img src="./assets/images/graph-analytics.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Data Science</h4>
+
+                <p class="service-item-text">
+                  Crafting predictive models and data visualizations that drive informed decisions and impactful results.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box service-icon-color">
+                <img src="./assets/images/data-science.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Research</h4>
+
+                <p class="service-item-text">
+                  Analyzing data, designing experiments, and 
+                  diving into literature.
+                  <i>Advancing  knowledge and making meaningful contributions.</i> 
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+      </article>
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume"  data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">ALX Africa</h4>
+              <span>2025</span>
+              <p class="timeline-text">
+                Certificate. Software Engineering
+              </p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Universiti Putra Malaysia </h4>
+
+              <span>2024</span>
+
+              <p class="timeline-text">
+                Msc. Agricultural process Engineering
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Federal University of Technology Akure</h4>
+
+              <span>2018</span>
+
+              <p class="timeline-text">
+                BEng. Agricultural Engineering
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Freelancer</h4>
+
+              <span>2024 — Present</span>
+
+              <p class="timeline-text">
+                I have been a freelance Full Stack Developer for over 2 years, working with projects across diverse industries such as e-commerce, science, and technology.
+                My expertise lies in building responsive websites, web applications, and providing end-to-end solutions to meet client needs.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Research Assistant</h4>
+
+              <span>2020 — 2024</span>
+
+              <p class="timeline-text">
+                As a Research Assistant in the Department of Agricultural Engineering,
+                I supported a team of researchers in studying the mechanical properties
+                of agricultural materials and modeling drying characteristics.
+                My role focused on data collection, analysis, and contributing to the development of research papers and presentations.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Web Development</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Data Science</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphics Design</h5>
+                <data value="52">52%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 52%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio"  data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn="all">All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="frontend">Frontend Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="backend">Backend Development</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn="fullstack">FullStack</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn="publication">Publication</button>
+            </li>
+            <li class="filter-item">
+              <button data-filter-btn="data-science">Data Science</button>
+            </li>
+
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-select-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item="all">All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="frontend">Frontend Development </button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="backend">Backend Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="fullstack">FullStack Development</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="publication">Publication</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item="data-science">Data Science</button>
+              </li>
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="fullstack">
+              <a href="https://farmcollab-production.up.railway.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/farmcollab.png" alt="finance" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Farm Collab</h3>
+
+                <p class="project-category">Full Stack application frontend built with React and backend with node.js</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="frontend">
+              <a href="https://reuseng-production.up.railway.app/">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/reuseng.png" alt="orizon" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ReUseNG</h3>
+
+                <p class="project-category">Still in development, frontend built with React</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="publication">
+              <a href=" https://doi.org/10.1111/jfpe.14627">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/influence_mech.png" alt="brawlhalla" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">The influence of papaya shape on its mass model
+                  and mechanical properties</h3>
+
+                <p class="project-category">Publication</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog"  data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/coming-soon.jpg" alt="Coming soon" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Design</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2022-02-23">Jan 31, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Coming Soon</h3>
+
+                  <p class="blog-text">
+                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126614.56224705657!2d3.822487118196667!3d7.38690986344153!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d77eeff086f%3A0x3b33e0f76e8e04a9!2sIbadan%2C%20Oyo!5e0!3m2!1sen!2sng!4v1736783496540!5m2!1sen!2sng"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
     </div>
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <p>You can reach me via:</p>
-    <div class="contact-info">
-      <a href="mailto:ademola.aina@outlook.com" class="contact-link">
-        <span class="material-symbols-outlined">
-          mail
-          </span> ademola.aina@outlook.com
-      </a>
-      <a href="https://www.linkedin.com/in/ademola-aina-m" class="contact-link" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 30 30">
-          <path d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"></path>
-      </svg> LinkedIn
-      </a>
-      <a href="https://github.com/ade-mic" class="contact-link" target="_blank">
-        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 50 50">
-          <path d="M17.791,46.836C18.502,46.53,19,45.823,19,45v-5.4c0-0.197,0.016-0.402,0.041-0.61C19.027,38.994,19.014,38.997,19,39 c0,0-3,0-3.6,0c-1.5,0-2.8-0.6-3.4-1.8c-0.7-1.3-1-3.5-2.8-4.7C8.9,32.3,9.1,32,9.7,32c0.6,0.1,1.9,0.9,2.7,2c0.9,1.1,1.8,2,3.4,2 c2.487,0,3.82-0.125,4.622-0.555C21.356,34.056,22.649,33,24,33v-0.025c-5.668-0.182-9.289-2.066-10.975-4.975 c-3.665,0.042-6.856,0.405-8.677,0.707c-0.058-0.327-0.108-0.656-0.151-0.987c1.797-0.296,4.843-0.647,8.345-0.714 c-0.112-0.276-0.209-0.559-0.291-0.849c-3.511-0.178-6.541-0.039-8.187,0.097c-0.02-0.332-0.047-0.663-0.051-0.999 c1.649-0.135,4.597-0.27,8.018-0.111c-0.079-0.5-0.13-1.011-0.13-1.543c0-1.7,0.6-3.5,1.7-5c-0.5-1.7-1.2-5.3,0.2-6.6 c2.7,0,4.6,1.3,5.5,2.1C21,13.4,22.9,13,25,13s4,0.4,5.6,1.1c0.9-0.8,2.8-2.1,5.5-2.1c1.5,1.4,0.7,5,0.2,6.6c1.1,1.5,1.7,3.2,1.6,5 c0,0.484-0.045,0.951-0.11,1.409c3.499-0.172,6.527-0.034,8.204,0.102c-0.002,0.337-0.033,0.666-0.051,0.999 c-1.671-0.138-4.775-0.28-8.359-0.089c-0.089,0.336-0.197,0.663-0.325,0.98c3.546,0.046,6.665,0.389,8.548,0.689 c-0.043,0.332-0.093,0.661-0.151,0.987c-1.912-0.306-5.171-0.664-8.879-0.682C35.112,30.873,31.557,32.75,26,32.969V33 c2.6,0,5,3.9,5,6.6V45c0,0.823,0.498,1.53,1.209,1.836C41.37,43.804,48,35.164,48,25C48,12.318,37.683,2,25,2S2,12.318,2,25 C2,35.164,8.63,43.804,17.791,46.836z"></path>
-      </svg> GitHub
-      </a>
-    </div>
-  </section>
-  <script>
-    function toggleMoreInfo(id) {
-      const moreInfo = document.getElementById(id);
-      const btn = moreInfo.nextElementSibling;
-      
-      if (moreInfo.style.display === "none") {
-        moreInfo.style.display = "inline";
-        btn.innerHTML = "show less";
-      } else {
-        moreInfo.style.display = "none";
-        btn.innerHTML = "show more";
-      }
-    }
-  </script>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
