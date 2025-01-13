@@ -60,21 +60,52 @@ filterBtns.forEach((btn) => {
   });
 });
 
-// Event listener for dropdown select items
+// Function to handle dropdown toggle
+function toggleDropdown(event) {
+  event.stopPropagation(); // Prevent the event from propagating further
+  selectList.classList.toggle("active");
+}
+
+// Function to close the dropdown when clicking outside
+function closeDropdown(event) {
+  if (!selectBox.contains(event.target) && !selectList.contains(event.target)) {
+    selectList.classList.remove("active");
+  }
+}
+
+// Function to handle dropdown item selection
+function handleSelectItemClick(event) {
+  const selectedValue = event.target.getAttribute("data-select-item");
+
+  // Apply filter logic
+  filterFunc(selectedValue);
+
+  // Update the displayed selected value
+  selectValueFilter.innerText = event.target.innerText;
+
+  // Close the dropdown after selection
+  selectList.classList.remove("active");
+}
+
+// DOM Element References
+const selectBox = document.querySelector("[data-select]");
+const selectList = document.querySelector(".select-list");
 const selectValueItems = document.querySelectorAll("[data-select-item]");
-selectValueItems.forEach((item) => {
-  item.addEventListener("click", function () {
-    const selectedValue = this.getAttribute("data-select-item");
-    
-    // Apply filter logic
-    filterFunc(selectedValue);
-    
-    // Update select dropdown value
-    selectValueFilter.innerText = this.innerText; // Updated variable name
+
+// Ensure dropdown toggle functionality
+if (selectBox && selectList) {
+  selectBox.addEventListener("click", toggleDropdown);
+
+  // Add event listener for each dropdown item
+  selectValueItems.forEach((item) => {
+    item.addEventListener("click", handleSelectItemClick);
   });
-});
 
-
+  // Close dropdown when clicking outside
+  document.addEventListener("click", closeDropdown);
+} else {
+  console.error("Dropdown elements not found");
+}
 
 
 // element toggle function
@@ -124,31 +155,31 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 
 }
 
-// add click event to modal close button
-modalCloseBtn.addEventListener("click", testimonialsModalFunc);
-overlay.addEventListener("click", testimonialsModalFunc);
+// // add click event to modal close button
+// modalCloseBtn.addEventListener("click", testimonialsModalFunc);
+// overlay.addEventListener("click", testimonialsModalFunc);
 
 
 
-// custom select variables
-const select = document.querySelector("[data-select]");
-const selectItems = document.querySelectorAll("[data-select-item]");
-const selectValue = document.querySelector("[data-selecct-value]");
-const filterBtn = document.querySelectorAll("[data-filter-btn]");
+// // custom select variables
+// const select = document.querySelector("[data-select]");
+// const selectItems = document.querySelectorAll("[data-select-item]");
+// const selectValue = document.querySelector("[data-selecct-value]");
+// const filterBtn = document.querySelectorAll("[data-filter-btn]");
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+// select.addEventListener("click", function () { elementToggleFunc(this); });
 
-// add event in all select items
-for (let i = 0; i < selectItems.length; i++) {
-  selectItems[i].addEventListener("click", function () {
+// // add event in all select items
+// for (let i = 0; i < selectItems.length; i++) {
+//   selectItems[i].addEventListener("click", function () {
 
-    let selectedValue = this.innerText.toLowerCase();
-    selectValue.innerText = this.innerText;
-    elementToggleFunc(select);
-    filterFunc(selectedValue);
+//     let selectedValue = this.innerText.toLowerCase();
+//     selectValue.innerText = this.innerText;
+//     elementToggleFunc(select);
+//     filterFunc(selectedValue);
 
-  });
-}
+//   });
+// }
 
 
 
